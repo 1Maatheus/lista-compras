@@ -24,6 +24,15 @@ html {
   margin-bottom: 20px;
 }
 
+h1 {
+  background-color: rgba(188, 169, 223, 0.26);
+  text-align: center;
+  display: inline;
+  padding: 5px 45px 5px 45px;
+  border-radius: 10px;
+  color: #000000;
+}
+
 .content {
   display: flex;
   width: 100%;
