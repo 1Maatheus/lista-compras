@@ -24,12 +24,12 @@ html {
 }
 
 h1 {
-  background-color: rgba(188, 169, 223, 0.26);
+  background-color: rgb(0, 0, 0);
   text-align: center;
   display: inline;
   padding: 5px 45px 5px 45px;
   border-radius: 10px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .content {
