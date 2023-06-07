@@ -3,20 +3,24 @@ function adicionarProduto() {
   var inputProduto = document.getElementById("inputProduto");
   var nomeProduto = inputProduto.value;
 
-  // Verifica se já existe algum produto no localStorage
-  var produtos = obterProdutosDoLocalStorage();
+  if (nomeProduto.length === 0) {
+    alert("Adicione o produto primeiro.");
+  } else {
+    // Verifica se já existe algum produto no localStorage
+    var produtos = obterProdutosDoLocalStorage();
 
-  // Adiciona o novo produto ao array de produtos
-  produtos.push(nomeProduto);
+    // Adiciona o novo produto ao array de produtos
+    produtos.push(nomeProduto);
 
-  // Salva o array de produtos atualizado no localStorage
-  salvarProdutosNoLocalStorage(produtos);
+    // Salva o array de produtos atualizado no localStorage
+    salvarProdutosNoLocalStorage(produtos);
 
-  // Limpa o campo de input
-  inputProduto.value = "";
+    // Limpa o campo de input
+    inputProduto.value = "";
 
-  // Atualiza a lista de produtos
-  atualizarListaProdutos(produtos);
+    // Atualiza a lista de produtos
+    atualizarListaProdutos(produtos);
+  }
 }
 
 // Função para remover um produto
