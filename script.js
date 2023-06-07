@@ -4,7 +4,7 @@ function adicionarProduto() {
   var nomeProduto = inputProduto.value;
 
   if (nomeProduto.length === 0) {
-    alert("Adicione o produto primeiro.");
+    alert("Nenhum produto adicionado à lista.");
   } else {
     // Verifica se já existe algum produto no localStorage
     var produtos = obterProdutosDoLocalStorage();
